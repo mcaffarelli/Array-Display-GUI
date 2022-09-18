@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csc600.array.ArrayController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="174.0" layoutY="14.0" prefHeight="47.0" prefWidth="231.0" text="ARRAY DISPLAY">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="displayContentsButton" layoutX="43.0" layoutY="124.0" mnemonicParsing="false" onAction="#DisplayContentsButtonPressed" prefHeight="25.0" prefWidth="470.0" text="A.) Display Contents" />
+      <Button fx:id="addNummberButton" layoutX="43.0" layoutY="169.0" mnemonicParsing="false" onAction="#AddNumberButtonPressed" text="B.) Add Number/Numbers" />
+      <Button fx:id="deleteNumberButton" layoutX="43.0" layoutY="218.0" mnemonicParsing="false" onAction="#DeleteNumberButtonPressed" prefHeight="25.0" prefWidth="119.0" text="C.) Delete Number" />
+      <Button fx:id="sortArrayButton" layoutX="43.0" layoutY="261.0" mnemonicParsing="false" onAction="#SortArrayButtonPressed" prefHeight="68.0" prefWidth="119.0" text="D.) Sort Array">
+         <opaqueInsets>
+            <Insets right="50.0" />
+         </opaqueInsets></Button>
+      <Button fx:id="searchArrayButton" layoutX="43.0" layoutY="388.0" mnemonicParsing="false" onAction="#SearchArrayButtonPressed" text="F.) Search Array" />
+      <Label layoutX="230.0" layoutY="149.0" text="Enter Numbers to Add" />
+      <TextField fx:id="numbersToAddText" alignment="CENTER" layoutX="229.0" layoutY="169.0" prefHeight="25.0" prefWidth="122.0" />
+      <TextField fx:id="addSpecifyText" alignment="CENTER" layoutX="390.0" layoutY="169.0" prefHeight="25.0" prefWidth="122.0" />
+      <Label layoutX="409.0" layoutY="149.0" text="Specify Position" />
+      <TextField fx:id="deleteNumberText" alignment="CENTER" layoutX="229.0" layoutY="218.0" prefHeight="25.0" prefWidth="122.0" />
+      <Label layoutX="235.0" layoutY="194.0" prefHeight="17.0" prefWidth="130.0" text="Specify Position (Index)" />
+      <Label layoutX="233.0" layoutY="243.0" text="Original Array Dispaly" />
+      <Label layoutX="236.0" layoutY="287.0" text="Sorted Array Display" />
+      <TextField fx:id="originalDisplayText" editable="false" layoutX="225.0" layoutY="261.0" prefHeight="25.0" prefWidth="368.0" />
+      <TextField fx:id="sortedDisplayText" editable="false" layoutX="223.0" layoutY="304.0" prefHeight="25.0" prefWidth="368.0" />
+      <Button fx:id="arraySizeButton" layoutX="43.0" layoutY="346.0" mnemonicParsing="false" onAction="#ArraySizeButtonPressed" text="E.) Size of Array" />
+      <TextField fx:id="arraySizeText" alignment="CENTER" editable="false" layoutX="224.0" layoutY="346.0" prefHeight="25.0" prefWidth="122.0" />
+      <Label layoutX="238.0" layoutY="329.0" text="Array Size Display" />
+      <TextField fx:id="searchText" alignment="CENTER" layoutX="224.0" layoutY="388.0" prefHeight="25.0" prefWidth="122.0" />
+      <Label layoutX="247.0" layoutY="371.0" text="Specify Number" />
+      <Button fx:id="ClearButton" layoutX="390.0" layoutY="388.0" mnemonicParsing="false" onAction="#ClearButtonPressed" prefHeight="25.0" prefWidth="85.0" text="Clear" />
+      <Button fx:id="ExitButton" layoutX="493.0" layoutY="388.0" mnemonicParsing="false" onAction="#ExitButtonPressed" prefHeight="25.0" prefWidth="85.0" text="Exit" />
+      <StackPane fx:id="StackPaneT" layoutX="-2.0" layoutY="53.0" prefHeight="55.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="mainArrayText" alignment="CENTER" editable="false" prefHeight="47.0" prefWidth="241.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </StackPane>
+   </children>
+</Pane>
